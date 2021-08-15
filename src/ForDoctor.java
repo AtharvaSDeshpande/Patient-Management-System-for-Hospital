@@ -32,7 +32,7 @@ public class ForDoctor {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            cone = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hospital?autoReconnect=true&useSSL=false", "root", "Atharva");
+            cone = DriverManager.getConnection(mysql.getUrl(), mysql.getUser(), mysql.getPassword());
             PreparedStatement ps = cone.prepareStatement("select FName,LName from Employee where ID =\"" + Did+"\";" );
             rs = ps.executeQuery();
             rs.beforeFirst();

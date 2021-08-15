@@ -18,8 +18,7 @@ public class LandingPage extends JFrame {
             String SQL;
 
             Connection connection;
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hospital?autoReconnect=true&useSSL=false",
-                    "root", "Atharva");
+            connection = DriverManager.getConnection(mysql.getUrl(), mysql.getUser(), mysql.getPassword());
         }catch(Exception e) {
             System.out.println(e);
         }

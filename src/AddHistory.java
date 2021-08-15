@@ -16,8 +16,7 @@ public class AddHistory extends JFrame {
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hospital?autoReconnect=true&useSSL=false", "demo", "Atharva");
-
+            connection = DriverManager.getConnection(mysql.getUrl(), mysql.getUser(), mysql.getPassword());
         }catch(Exception e) {
             System.out.println(e);
         }

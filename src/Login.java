@@ -32,7 +32,7 @@ public class Login extends JFrame {
 
                     try {
                         Class.forName("com.mysql.jdbc.Driver");
-                        Connection cone = DriverManager.getConnection("jdbc:mysql://localhost:3306/Hospital?autoReconnect=true&useSSL=false", "root", "Atharva");
+                        Connection cone = DriverManager.getConnection(mysql.getUrl(), mysql.getUser(), mysql.getPassword());
                         PreparedStatement ps = cone.prepareStatement("select * from "+role);
                         ResultSet rs = ps.executeQuery();
                         while (rs.next()) {

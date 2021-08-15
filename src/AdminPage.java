@@ -65,8 +65,7 @@ public class AdminPage {
     AdminPage() {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital?autoReconnect=true&useSSL=false",
-                    "root", "Atharva");
+            connection = DriverManager.getConnection(mysql.getUrl(), mysql.getUser(), mysql.getPassword());
         }catch(Exception e)
         {
             System.out.println(e);
