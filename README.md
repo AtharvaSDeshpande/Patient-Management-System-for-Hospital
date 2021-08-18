@@ -28,7 +28,8 @@ be made available to the administrator, except for the details present in *patie
 
 ## Entity-Relationship Diagram:
 
-![ER Diagram](https://user-images.githubusercontent.com/55548416/129476854-133e19a9-fa9c-4f87-8ae3-03dc837df3da.png)
+![HOSPITAL DBMS](https://user-images.githubusercontent.com/55548416/129959415-1b57a6aa-ab37-4b7f-adc2-c85eb6336cf3.png)
+
 
 
 
