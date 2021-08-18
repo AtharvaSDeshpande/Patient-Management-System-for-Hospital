@@ -1,6 +1,8 @@
 # Patient-Management-System-for-Hospital
 
-This project is a Java based application created to manage the patients visiting the hospital and the employees of the hospital. Relational database (MySQL) is used for storage. The application consists of 3 views :- Receptionist, Doctor, and Administrator each having their restriced data access, inorder to hide the sensitive and confedential information. 
+## Aim of the project
+
+The aim of the project is to develop a database management system that is meant to computerize the work of a hospital such as keeping track of patient appointments, schedule of doctors and nurses, and information of all the employees, along with maintaing the integrity and security of data. 
 
 ## About the project
 
@@ -20,9 +22,9 @@ deleting an employee to adding one. Entire information of the hospital will
 be made available to the administrator, except for the details present in *patient history*.
 
 ## Technology Stack:
-      Front End : Java,XML
-      Backend : MYSQL
-      Database Connectivity : JDBC
+      Front End: Java, XML
+      Backend: MYSQL
+      Database Connectivity: JDBC
 
 ## Entity-Relationship Diagram:
 
